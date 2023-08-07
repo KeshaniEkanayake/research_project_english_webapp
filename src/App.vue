@@ -1,16 +1,21 @@
 <template>
   <h1>header in the App.vue file</h1>
-  <Login/> 
+  <!-- <Login/>  -->
+  
+  <div id="app">
+    <!-- route components will be rendered here -->
+    <router-view></router-view>
+  </div>
 </template>
 
 
 
 <script>
-import Login from './components/Login.vue'
+// import Login from './components/Login.vue'
 
 export default {
   name: 'App',
-  components: {Login},
+  // components: {Login},
 }
 </script>
 
