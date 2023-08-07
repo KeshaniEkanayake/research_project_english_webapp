@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="home">
       <h1>Home</h1>
       <p>Welcome to our website! We are a company that specializes in creating awesome products.</p>
       <p>
