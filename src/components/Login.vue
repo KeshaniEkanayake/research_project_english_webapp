@@ -11,7 +11,7 @@
 <script>
     export default{
         // name given here is used to export this page(compnent) to somewhere else. 
-        //use this convention to satisfy Eslint
+        //use this convention to satisfy Eslint(use 2 word names to define the page)
         name:'LoginForm', 
 
         data(){
