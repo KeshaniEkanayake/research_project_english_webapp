@@ -1,18 +1,17 @@
 <template>
-    <div class="selectProfLevel">
+    <div class="SelectProfLevel">
       <h1>Select proficiency level</h1>
-      <p>Welcome to our website! We are a company that specializes in creating awesome products.</p>
 
       <!-- buttons to select different proficiency levels -->
       <ButtonBasicProfLevel/>
-      <br>
+      <br>             
       <ButtonIntermediateProfLevel/>
       <br>
       <ButtonAdvancedProfLevel/>
 
 
     </div>
-  </template>
+</template>
   
   <script>
 //   related to component
@@ -31,10 +30,20 @@
   </script>
   
   <style>
-  .selectProfLevel {
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
-  
+   .SelectProfLevel{
+    background-image: url(../assets/images/main-background.jpg);
+    background-repeat: no-repeat;
+    /* Optional: Adjust the background size to fit the element */
+/* Other values: contain, 100% 100%, etc. */
+    background-size: cover; 
+    /* used to add the image to the whole background */
+    min-height: 100vh;
+
+
+   }
+   
+   h1{
+    color: azure;
+   }
   </style>
   
