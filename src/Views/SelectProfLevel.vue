@@ -35,12 +35,6 @@
     padding: 20px;
     background-color: #f2f2f2;
   }
-  h1 {
-    color: #333;
-  }
-  p {
-    color: #666;
-    line-height: 1.6;
-  }
+  
   </style>
   
