@@ -21,6 +21,11 @@
 </script>
   
 <style>
+    /* to remove the white space in the upper part of the page */
+    *{
+        margin: 0px;
+    }
+
   /* style related to this page */
    .SelectProfLevel{
         background-image: url(../assets/images/main-background.jpg);
@@ -35,8 +40,8 @@
    h1{
     color: azure;
     text-align: center;
-    font-size: 50px;
-    padding:5%;
+    font-size: 60px;
+    
    }
 
    /* centers the card in the page */
@@ -46,7 +51,7 @@
         justify-content: center;
 
         /* moves the card away from botom margin */
-        /* margin-top: 10%; */
+        margin-top: 10%;
 
    }
 
