@@ -1,5 +1,5 @@
 <template>
-  <h1>header in the App.vue file</h1>
+  <!-- <h1>header in the App.vue file</h1> -->
   <!-- <Login/>  -->
   
   <div id="app">
@@ -19,13 +19,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  /* text-align: center; */
+  /* color: #2c3e50; */
+  /* margin-top: 60px; */
 }
 </style>
