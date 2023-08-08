@@ -1,4 +1,26 @@
+/* contains CSS styling for common objects */
+
+
 /* styles for 3 prof buttons  */
 .prof-buttons{
     width: 300px;
+}
+
+/* this background is added to the common pages in the app */
+.mainBackground1{
+    background-image: url(../../assets/images/main-background.jpg);
+    background-repeat: no-repeat;
+    /* Optional: Adjust the background size to fit the element */
+    /* Other values: contain, 100% 100%, etc. */
+    background-size: cover; 
+    /* used to add the image to the whole background */
+    min-height: 100vh; 
+}
+
+
+/* large heading for main pages */
+.heading1{
+    color: azure;
+    text-align: center;
+    font-size: 60px;
 }
