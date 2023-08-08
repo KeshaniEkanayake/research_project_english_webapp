@@ -2,11 +2,8 @@
     <div class="SelectProfLevel">
         <h1>Select Your Proficiency Level</h1><br>
 
-        <div class="cardAlignment">
             <LargeCard/>
-        </div>
        
-
     </div>
 </template>
   
@@ -23,7 +20,7 @@
 <style>
     /* to remove the white space in the upper part of the page */
     *{
-        margin: 0px;
+        /* margin: 0px; */
     }
 
   /* style related to this page */
@@ -34,7 +31,16 @@
         /* Other values: contain, 100% 100%, etc. */
         background-size: cover; 
         /* used to add the image to the whole background */
-        min-height: 100vh;   
+        min-height: 100vh; 
+        
+        /* topic and the large box will be displayed in 1 column */
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        /* get all the elements located in the middle(vertically and horizontally) */
+        justify-content: center;
    }
    
    h1{
@@ -44,16 +50,6 @@
     
    }
 
-   /* centers the card in the page */
-   .cardAlignment{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        /* moves the card away from botom margin */
-        margin-top: 10%;
-
-   }
 
 </style>
   
