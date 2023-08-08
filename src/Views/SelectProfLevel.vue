@@ -10,6 +10,7 @@
   <script>
     import { defineComponent } from "vue"
     import LargeCard from "../components/LargeCard.vue"
+
     export default defineComponent({
         components:{
             LargeCard
@@ -17,7 +18,10 @@
     })
 </script>
   
-<style>
+
+
+<!-- use this "scope" to avoid overriding the styles related to this page in other pages-->
+<style scoped>
     /* to remove the white space in the upper part of the page */
     *{
         /* margin: 0px; */
