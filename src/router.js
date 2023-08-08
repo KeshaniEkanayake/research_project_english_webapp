@@ -6,6 +6,7 @@ import Home from './Views/Home.vue';
 import About from './Views/About.vue';
 import SelectProfLevel from './Views/SelectProfLevel.vue'
 import ModuleSelection from './Views/ModuleSelection.vue'
+import SelectBasicGrammarLessons from './Views/SelectBasicGrammarLessons.vue'
 
 
 import Test from './Views/Test.vue'
@@ -15,6 +16,9 @@ const routes = [
   { path: '/About', component: About },
   { path: '/SelectProfLevel', component: SelectProfLevel },
   { path: '/ModuleSelection', component: ModuleSelection },
+  { path: '/SelectBasicGrammarLessons', component: SelectBasicGrammarLessons },
+
+
   { path: '/Test', component: Test }
 ];
 
