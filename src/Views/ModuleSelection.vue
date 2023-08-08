@@ -1,8 +1,20 @@
 <template>
-  <div>
+  <div class="mainStyle">
     <h1>What you wish to practice?</h1>
 
-    <CardListeningModule/>
+    <table>
+        <tr>
+            <td>
+                <CardListeningModule/>
+            </td>
+            <td>
+                <CardReadingModule/>
+            </td>
+        </tr>
+    </table>
+       
+        
+       
    
   </div>
 </template>
@@ -11,16 +23,22 @@
 
 <script>
 import CardListeningModule from "../components/CardListeningModule.vue";
+import CardReadingModule from "../components/CardReadingModule.vue";
 
 export default {
     components:{
-        CardListeningModule
+        CardListeningModule,
+        CardReadingModule,
     }
 }
 </script>
+    
 
 
-
-<style>
+<style scoped>
+    .mainStyle{
+       display: flex;
+       flex-direction: column; 
+    }
 
 </style>
