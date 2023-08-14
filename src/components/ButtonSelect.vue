@@ -5,7 +5,7 @@
       <!-- @click="handleClick" is used to add link to the button -->
       <!-- v-on="$listner" is used to add a listner to button(to add a link in a dynamic way) -->
       <!-- v-bind="$attrs" is used to make button component listen to events provided dynamically -->
-      <n-button  size="large" icon-placement="right" class="selectLessonButton">
+      <n-button type="info" size="large" icon-placement="right" class="selectLessonButton">
         <template #icon>
           <n-icon><log-in-icon/></n-icon>
         </template>
@@ -19,7 +19,7 @@
 
 
 
-<script>
+<script scoped>
     import { LogInOutline as LogInIcon } from "@vicons/ionicons5";
 
     export default({
@@ -55,5 +55,9 @@
     border-radius: 12px;
     width: 800px;
     box-shadow: 10px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    /* color of words */
+    color: black;
+    /* set a background color for the button */
+    background-color: white;
   }
 </style>

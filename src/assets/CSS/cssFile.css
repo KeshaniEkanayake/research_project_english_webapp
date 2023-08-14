@@ -15,6 +15,10 @@
     background-size: cover; 
     /* used to add the image to the whole background */
     min-height: 100vh; 
+
+    /* just added this, because there was a white space in the top of the page  */
+    /* margin-top: -40px; */
+
 }
 
 
@@ -23,4 +27,6 @@
     color: azure;
     text-align: center;
     font-size: 60px;
+
 }
+

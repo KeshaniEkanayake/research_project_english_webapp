@@ -1,6 +1,7 @@
 <template>
+    <!-- main background1 was taken from cssFile.css -->
     <div class="mainBackground1">
-        <div class="SelectProfLevel">
+        <div class="pageStyle">
             <h1 class="heading1">Select Your Proficiency Level</h1><br>
 
                 <LargeCard/>
@@ -11,7 +12,7 @@
   
 
 
-<script>
+<script scoped>
     import { defineComponent } from "vue"
     import LargeCard from "../components/LargeCard.vue"
 
@@ -29,7 +30,7 @@
 @import url(../assets/CSS/cssFile.css);
 
   /* style related to this page */
-   .SelectProfLevel{
+   .pageStyle{
         /* topic and the large box will be displayed in 1 column */
         display: flex;
         flex-direction: column;
