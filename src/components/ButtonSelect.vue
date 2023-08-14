@@ -2,7 +2,7 @@
 <!-- this is a long button -->
 <template>
     <n-space>
-      <!-- @click="handleClick" add links -->
+      <!-- @click="handleClick" is used to add link to the button -->
       <n-button @click="handleClick" size="large" icon-placement="right" class="selectLessonButton">
         <template #icon>
           <n-icon><log-in-icon /></n-icon>
@@ -41,7 +41,7 @@
 
       methods: {
         handleClick(){
-          console.log("direct to the corresponding lesson");
+          console.log("direct to the corresponding lesson...");
         },
       },
   });
