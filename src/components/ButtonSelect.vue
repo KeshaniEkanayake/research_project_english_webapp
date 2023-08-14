@@ -2,7 +2,8 @@
 <!-- this is a long button -->
 <template>
     <n-space>
-      <n-button size="large" icon-placement="right" class="selectLessonButton">
+      <!-- @click="handleClick" add links -->
+      <n-button @click="handleClick" size="large" icon-placement="right" class="selectLessonButton">
         <template #icon>
           <n-icon><log-in-icon /></n-icon>
         </template>
@@ -22,16 +23,25 @@
     export default({
       name:"ButtonSelection",
 
+
       components: {
         // import an icon into the button
         LogInIcon
       },
+
 
       props: {
         lessonName: {
           type: String,
           // default value to be displayed 
           default: ()=>"lesson name",
+        },
+      },
+
+
+      methods: {
+        handleClick(){
+          console.log("direct to the corresponding lesson");
         },
       },
   });
