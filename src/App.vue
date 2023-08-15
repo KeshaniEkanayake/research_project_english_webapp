@@ -5,6 +5,7 @@
   <div id="app">
     <!-- route components will be rendered here -->
     <router-view></router-view>
+
   </div>
 </template>
 

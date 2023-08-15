@@ -1,17 +1,17 @@
 <!-- in this page students can select the  grammar lesson they want to practice -->
 <template>
   <div class="mainBackground1">
-  <h1 class="heading1">Select grammar lesson to practice</h1>
-
     <div class="pageStyle">
-      <!-- @click ="lesson" -->
-      <ButtonSelection @click="navToLesson1" lessonName="Adjectives and Prepositions" /> <br>
-      <ButtonSelection @click="navToLesson2" lessonName ="Prepositions of place - 'in', 'on', 'at' "/> <br>
-      <ButtonSelection lessonName ="Quantifiers: 'few', 'a few', 'little' and 'a bit of' "/> <br>
-      <ButtonSelection lessonName ="Simple Present Tense "/> <br>
-      <ButtonSelection lessonName ="Simple Prast Tense and Past Continuous Tense"/>
-    </div>
+      <h1 class="heading1">Select grammar lesson to practice</h1>
 
+      
+        <!-- @click ="lesson" -->
+        <ButtonSelection @click="navToLesson1" lessonName="Adjectives and Prepositions" /> <br>
+        <ButtonSelection @click="navToLesson2" lessonName ="Prepositions of place - 'in', 'on', 'at' "/> <br>
+        <ButtonSelection lessonName ="Quantifiers: 'few', 'a few', 'little' and 'a bit of' "/> <br>
+        <ButtonSelection lessonName ="Simple Present Tense "/> <br>
+        <ButtonSelection lessonName ="Simple Prast Tense and Past Continuous Tense"/>
+    </div>
   </div>
 </template>
 
