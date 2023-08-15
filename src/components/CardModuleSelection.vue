@@ -1,10 +1,9 @@
-<!-- reuse this card for listneing module in all three proficiency levels  -->
-<!-- this is a reusable card for all 3 module types-grammar, listening and reading -->
+<!-- this is a reusable card for all 3 module types->grammar, listening and reading -->
 <template>
-    <n-card size="medium" class="n-card" hoverable>
+    <n-card size="medium" hoverable>
       <div class="card-content">
         <h3>{{ cardHeading }}</h3>
-        <img src="../assets/images/listening-vector.jpg" width="200" height="200"/>
+        <img :src="imageSrc" width="200" height="200"/>
         <br>
       </div>
     </n-card>
@@ -17,8 +16,14 @@
     props:{
       cardHeading:{
         type: String,
-      }
-    }
+      },
+    // used to add an image dynamically to the card
+    imageSrc: {
+            type: String,
+            required: true, // Make the prop required
+          },
+
+    },  
   });
  
 </script>
@@ -27,12 +32,6 @@
 
 
 <style scoped>
-  .n-card {
-    /* max-width: 200px; */
-    /* align-items: center; */
-
-  }
-
   .card-content{
     display: flex;
     flex-direction: column;

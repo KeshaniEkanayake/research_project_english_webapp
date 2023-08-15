@@ -3,9 +3,19 @@
         <div class="mainStyle">
             <h1 class="heading1">What you wish to practice?</h1>
             <div class="card-structure">
-                <CardListeningModule cardHeading="Listnening"/>
-                <CardListeningModule cardHeading="Reading"/>
-                <CardListeningModule cardHeading="Grammar"/>
+                <CardModuleSelection 
+                    cardHeading="Listnening" 
+                    :imageSrc="listeningImage"
+                />
+
+                <CardModuleSelection 
+                    cardHeading="Reading"
+                    :imageSrc="readingImage"
+                />
+
+                <CardModuleSelection cardHeading="Grammar"
+                :imageSrc="grammarImage"                
+                />
             </div>
                        
         </div>
@@ -15,17 +25,28 @@
 
 
 <script>
-import CardListeningModule from "../components/CardListeningModule.vue";
-// import CardReadingModule from "../components/CardReadingModule.vue";
-// import CardGrammarModule from "../components/CardGrammarModule.vue";
+import CardModuleSelection from "../components/CardModuleSelection.vue";
+import listeningImage from "../assets/images/listening-vector.jpg";
+import readingImage from "../assets/images/reading-vector.jpg";
+import grammarImage from "../assets/images/grammar-vector.jpg";
+
+
+
 
 export default {
     components:{
-        CardListeningModule,
-        // CardReadingModule,
-        // CardGrammarModule,
-    }
-}
+        CardModuleSelection,
+    }, 
+
+    data(){
+        return{
+            // needs to display images
+            listeningImage: listeningImage,
+            readingImage: readingImage,
+            grammarImage: grammarImage,
+        };
+    },
+};
 </script>
     
 
