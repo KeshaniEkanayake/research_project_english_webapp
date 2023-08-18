@@ -1,45 +1,95 @@
 <template>
-    <div class="page-structure">
-        <!-- left box -->
-        <div class="box-left">
-            <div class="inside-box">
-                <h2>Choose the correct preposition</h2>
-                <p>On Friday mornings, I'm usually _________ school.</p>
-            </div>    
-        </div>
+    <div class="mainBackground1">
+        <div class="page-structure">
+            <!-- left box -->
+            <div class="box-left">
+                <div class="inside-box">
+                    <h2>Choose the correct preposition</h2>
+                    <p>On Friday mornings, I'm usually _________ school.</p>
+                    <br>
 
+                <!-- radio buttons -->
+                <n-space>
+                        <n-radio
+                            :checked="checkedValue === 'at'"
+                            value="at"
+                            name="answers"
+                            @change="handleChange"
+                            size="large"
+                        >
+                        of
+                        </n-radio>
 
+                        <n-radio
+                            :checked="checkedValue === 'in'"
+                            value="in"
+                            name="answers"
+                            @change="handleChange"
+                            size="large"
+                        >
+                            to
+                        </n-radio>
+                    </n-space>
+                    <br>
+                    <!-- check button -->
+                    <ButtonCheck/>
+                </div>    
+            </div>
 
-
-
-        <!-- right box -->
-        <div class="box-right">
-
+            <!-- right box -->
+            <div class="box-right"> </div> 
         </div>
     </div>
 </template>
 
 <script>
-export default {
+import {  ref } from "vue";
+import ButtonCheck from "../components/ButtonCheck.vue"
 
+
+export default {
+    // related to radio buttons
+    setup() {
+    const checkedValueRef = ref(null);
+    
+    return {
+      disabled: ref(true),
+      checkedValue: checkedValueRef,
+      handleChange(e) {
+        checkedValueRef.value = e.target.value;
+      }
+    };
+  },
+
+
+  components:{
+    ButtonCheck
+  }
 }
 </script>
 
 <style scoped>
-    /* arrange 2 boxes in the page in left and right */
+@import url(../assets/CSS/cssFile.css);
+
+
+
+
+
+  /* arrange 2 boxes in the page in left and right */
     .page-structure{
         display: flex;
         /* keep a gap between 2 boxes */
         gap: 20px;
+        justify-content: center;
         /* For vertical alignment */
         align-items: center; 
         /* Adjust the height as needed. This locates the box properly */
-        height: 90vh; 
+        height: 100vh; 
     }
 
     /* white box in the left of the page */
     .box-left {
-            width: 60%;
+            width: 50%;
             height: 500px;
             border-radius: 1.25rem;
             background: #FFF;
