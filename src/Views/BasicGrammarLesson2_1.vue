@@ -71,10 +71,6 @@ export default {
 <style scoped>
 @import url(../assets/CSS/cssFile.css);
 
-
-
-
-
   /* arrange 2 boxes in the page in left and right */
     .page-structure{
         display: flex;
