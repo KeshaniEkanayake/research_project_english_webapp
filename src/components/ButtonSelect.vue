@@ -19,7 +19,7 @@
 
 
 
-<script scoped>
+<script>
     import { LogInOutline as LogInIcon } from "@vicons/ionicons5";
 
     export default({
