@@ -1,7 +1,7 @@
 <!-- in this page students can select the  grammar lesson they want to practice -->
 <template>
   <div class="mainBackground1">
-    <div class="pageStyle">
+    <div class="page-style">
       <h1 class="heading1">Select grammar lesson to practice</h1>
 
       
@@ -19,7 +19,7 @@
 import ButtonSelection from '../components/ButtonSelect.vue'
 
 export default {
-    components:{
+   components:{
         ButtonSelection,
     },
 
@@ -39,7 +39,7 @@ export default {
 <style scoped>
 @import url(../assets/CSS/cssFile.css);
 
-.pageStyle{
+.page-style{
         /* topic and the large box will be displayed in 1 column */
         display: flex;
         flex-direction: column;
