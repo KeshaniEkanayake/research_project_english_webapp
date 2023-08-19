@@ -42,6 +42,8 @@
     </div>
 </template>
 
+
+
 <script>
 import {  ref } from "vue";
 import ButtonCheck from "../components/ButtonCheck.vue"

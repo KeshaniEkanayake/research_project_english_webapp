@@ -19,6 +19,7 @@ import BasicGrammarLesson4_2 from './Views/BasicGrammarLesson4_2.vue'
 
 import Test from './Views/Test.vue'
 
+// type the path given in 'path:' in the browser to display the page
 const routes = [
   { path: '/Home', component: Home },
   { path: '/About', component: About },
