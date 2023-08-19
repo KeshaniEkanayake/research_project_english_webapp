@@ -13,61 +13,50 @@
 
 
         <!-- right part with the question content -->
-            <div>
-                <h2>Put the corresponding number of the answer in the give space</h2>
+            <div class="right-content">
+                <h2>Put the corresponding number of the answer in the given space</h2>
 
-                <p class="para-style"> Last year, I had an incredible vacation in Ella, a charming hill country town in Sri Lanka. My friends and I decided to 
-                    take a break from our studies and <InputAnswer/> there by train. The journey <InputAnswer/> long but exciting, as we <InputAnswer/> through 
-                    lush green tea plantations and enjoyed the scenic views.</p>
-
-                <p class="para-style">When we <InputAnswer/> in Ella, we <InputAnswer/> into a cozy guesthouse with a stunning view of the surrounding mountains. The weather 
-                    <InputAnswer/> cool, and the air was crisp. On the first day, we <InputAnswer/> for a hike to Little Adam's Peak. As we <InputAnswer/> the trail, 
-                    we spotted colorful butterflies and heard the songs of birds.</p>
-
-                <p class="para-style">The next day, we <InputAnswer/> the Nine Arch Bridge, an iconic landmark. As we <InputAnswer/> on the bridge, a train <InputAnswer/>
-                    underneath, and we <InputAnswer/> some amazing photos. Later, we <InputAnswer/> the town's market, where locals were selling fresh fruits, 
-                    vegetables, and handmade crafts.</p>
-
-                <p class="para-style">One evening, we <InputAnswer/> a bonfire at our guesthouse. While we <InputAnswer/> around the fire, we <InputAnswer/> stories and laughter 
-                    with fellow travelers. The starry night sky <InputAnswer/> brightly above us.</p>
-
-                <p class="para-style">As our vacation <InputAnswer/> to an end, we <InputAnswer/> our bags with unforgettable memories. Ella was a place of natural beauty and 
-                    warm hospitality, and I <InputAnswer/> grateful for the experiences we had.</p>
+                <p class="para-style"> Last August, I (1) <InputAnswer/>(go) to Ella, a beautiful hill station in Sri Lanka, for a vacation. 
+                I (2) <InputAnswer/>(travel) there with my family. The journey (3) <InputAnswer/>(take) several hours by train.
+                While we (4) <InputAnswer/>(enjoy) the scenic views from the train, I (5) <InputAnswer/>(feel) a sense of excitement. When we (6) <InputAnswer/>(arrive) 
+                in Ella, the weather (7) <InputAnswer/>(be) perfect – the sun (8) <InputAnswer/>(shine) and a cool breeze (9) <InputAnswer/>(blow). We (10) <InputAnswer/>(stay) in a cozy 
+                cottage with stunning views of the surrounding tea plantations. During our stay, we (11) <InputAnswer/>(explore) the area by hiking to 
+                Little Adam's Peak and (12) <InputAnswer/>(visit) the Nine Arch Bridge. Each moment (13) <InputAnswer/>(seem) like a new adventure. We (14) <InputAnswer/>(capture) 
+                many photos to remember the trip. Overall, my vacation in Ella (15) <InputAnswer/>(be) an unforgettable experience that I will cherish forever.</p>
 
                 <br>
                     <!-- answers -->
              <table>
                     <tr>
-                        <td><ButtonAnswer answer="1 checked"/></td>
-                        <td><ButtonAnswer answer="2 packed"/></td>
-                        <td><ButtonAnswer answer="3 was"/></td>
-                        <td><ButtonAnswer answer="4 was"/></td>
+                        <td><ButtonAnswer answer="1 took"/></td>
                         <td><ButtonAnswer answer="5 arrived"/></td>
+                        <td><ButtonAnswer answer="9 visited"/></td>
+                        <td><ButtonAnswer answer="13 was blowing"/></td>
+                        
                     </tr>
 
                     <tr>
-                        <td><ButtonAnswer answer="6 took"/></td>
-                        <td><ButtonAnswer answer="7 felt"/></td>
-                        <td><ButtonAnswer answer="8 traveled"/></td>
-                        <td><ButtonAnswer answer="9 shared"/></td>
-                        <td><ButtonAnswer answer="10 were passing"/></td>
+                        <td><ButtonAnswer answer="2 stayed"/></td>
+                        <td><ButtonAnswer answer="6 explored"/></td>
+                        <td><ButtonAnswer answer="10 went"/></td>
+                        <td><ButtonAnswer answer="14 was"/></td>
+                       
                     </tr>
 
                     <tr>
-                        <td><ButtonAnswer answer="11 were climbing"/></td>
-                        <td><ButtonAnswer answer="12 explored"/></td>
-                        <td><ButtonAnswer answer="13 joined"/></td>
-                        <td><ButtonAnswer answer="14 were standing"/></td>
-                        <td><ButtonAnswer answer="15 came "/></td>
+                        <td><ButtonAnswer answer="3  were enjoying"/></td>
+                        <td><ButtonAnswer answer="7 was"/></td>
+                        <td><ButtonAnswer answer="11 seemed"/></td>
+                        <td><ButtonAnswer answer="15 traveled "/></td>
                     </tr>
 
                     <tr>
-                        <td><ButtonAnswer answer="1 was passing"/></td>
-                        <td><ButtonAnswer answer="2 went"/></td>
-                        <td><ButtonAnswer answer="2 was shining"/></td>
-                        <td><ButtonAnswer answer="2 were sitting"/></td>
-                        <td><ButtonAnswer answer="2 visited"/></td>
+                        <td><ButtonAnswer answer="4 felt"/></td>
+                        <td><ButtonAnswer answer="8  captured"/></td>
+                        <td><ButtonAnswer answer="12  was shining"/></td>
+
                     </tr>
+
                 </table>
                    <br> 
                 <!-- check answer button -->
@@ -111,7 +100,7 @@ components:{
 
 
 .box-left {
-        width: 50%;
+        width: 30%;
         height: 550px;
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
@@ -123,10 +112,13 @@ components:{
     }
    
 
+    .right-content{
+        width: 60%;
+    }
    .para-style{
     color: black;
-    font-size: large;
-    margin:0;
+    font-size: medium;
+    
    }
 
 
