@@ -14,6 +14,7 @@ import BasicGrammarLesson3_1 from './Views/BasicGrammarLesson3_1.vue'
 import BasicGrammarLesson4_1 from './Views/BasicGrammarLesson4_1.vue'
 import BasicGrammarLesson4_2 from './Views/BasicGrammarLesson4_2.vue'
 
+import BasicReading2 from './Views/BasicReading2.vue'
 
 
 
@@ -33,6 +34,7 @@ const routes = [
   { path: '/Basic/Grammar/lesson4_1', component: BasicGrammarLesson4_1 },
   { path: '/Basic/Grammar/lesson4_2', component: BasicGrammarLesson4_2 },
 
+  { path: '/Basic/Reading/lesson1', component: BasicReading2 },
 
 
 
