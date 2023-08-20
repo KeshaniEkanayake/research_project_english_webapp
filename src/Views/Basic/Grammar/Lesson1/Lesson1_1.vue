@@ -1,51 +1,61 @@
+<!-- /Basic/Grammar/AdvPrepo   use this path to get the page displayed in th browser -->
 <template>
-  <div class="mainBackground1">
-    <div class="page-style">
-        <div class="box-property">
-            <div class="inside-box"> 
-                <p>I have__________ questions!</p>
+    <div class="mainBackground1">
+        <div class="page-style">
+            <div class="box-property">
+                <div class="inside-box">
+                    <h2>Choose the suitable preposition</h2> <br>
+                    <p>I am really proud__________ of you!</p>
 
-
-                <!-- radio buttons -->
-                <n-space>
+                    <n-space>
                         <n-radio
-                            :checked="checkedValue === 'a few'"
-                            value="a few"
+                            :checked="checkedValue === 'of'"
+                            value="of"
                             name="answers"
                             @change="handleChange"
                             size="large"
                         >
-                        a few
+                        of
                         </n-radio>
 
                         <n-radio
-                            :checked="checkedValue === 'a bit of'"
-                            value="a bit of"
+                            :checked="checkedValue === 'to'"
+                            value="to"
                             name="answers"
                             @change="handleChange"
                             size="large"
                         >
-                            a bit of
+                            to
+                        </n-radio>
+
+                        <n-radio
+                            :checked="checkedValue === 'with'"
+                            value="with"
+                            name="answers"
+                            @change="handleChange"
+                            size="large"
+                        >
+                            with
                         </n-radio>
                     </n-space>
-                    <br><br>
+                    <br>
                     <ButtonCheck/>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 </template>
 
 
 
 <script>
 import {  ref } from "vue";
-import ButtonCheck from "../components/ButtonCheck.vue"
+import ButtonCheck from "../../../../components/ButtonCheck.vue"
 
 
-export default {
+export default({
 // related to the radio buttons in the page
-    setup() {
+  setup() {
     const checkedValueRef = ref(null);
     
     return {
@@ -57,18 +67,19 @@ export default {
     };
   },
 
+
   components:{
     ButtonCheck
   }
-}
+});
 </script>
 
 
 
-<style scoped>
-@import url(../assets/CSS/cssFile.css);
+<style scoped> 
+@import url(../../../../assets/CSS/cssFile.css);
 
-.page-style{
+    .page-style{
         display: flex;
         justify-content: center;
         /* For vertical alignment */
@@ -77,8 +88,8 @@ export default {
         height: 100vh; 
      } 
 
- /* white box in the middle of the page */
- .box-property {
+     /* white box in the middle of the page */
+    .box-property {
         height: 50%;
         width: 50%;
         border-radius: 1.25rem;

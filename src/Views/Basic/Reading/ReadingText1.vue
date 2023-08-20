@@ -23,9 +23,9 @@
 
 
 <script>
-import CardReadingText from "../components/CardReadingText.vue"
-import TabsReading1 from "../components/TabsReading1.vue"
-import readingTextImage from "../assets/images/images-in-questions/reading1.jpg";
+import CardReadingText from "../../../components/CardReadingText.vue"
+import TabsReading1 from "../../../components/TabsReading1.vue"
+import readingTextImage from "../../../assets/images/images-in-questions/reading1.jpg";
 
 
 
@@ -55,7 +55,7 @@ export default {
 </script>
 
 <style>
-@import url(../assets/CSS/cssFile.css);
+@import url(../../../assets/CSS/cssFile.css);
 
 
   .page-structure{

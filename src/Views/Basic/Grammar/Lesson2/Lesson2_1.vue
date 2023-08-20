@@ -46,7 +46,7 @@
 
 <script>
 import {  ref } from "vue";
-import ButtonCheck from "../components/ButtonCheck.vue"
+import ButtonCheck from "../../../../components/ButtonCheck.vue"
 
 
 export default {
@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-@import url(../assets/CSS/cssFile.css);
+@import url(../../../../assets/CSS/cssFile.css);
 
   /* arrange 2 boxes in the page in left and right */
     .page-structure{
@@ -99,7 +99,7 @@ export default {
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         /* add the background image  */
-        background-image: url(../assets/images/images-in-questions/school.jpg);
+        background-image: url(../../../../assets/images/images-in-questions/school.jpg);
         background-size: cover; /* Adjust how the background image is displayed */
         background-position: center; /* Center the background image */
     }
