@@ -28,7 +28,7 @@
                             a bit of
                         </n-radio>
                     </n-space>
-                    <br>
+                    <br><br>
                     <ButtonCheck/>
             </div>
         </div>

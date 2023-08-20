@@ -79,31 +79,29 @@ export default {
         /* keep a gap between 2 boxes */
         gap: 20px;
         justify-content: center;
-        /* For vertical alignment */
-        align-items: center; 
+        /* For vertical alignment -set same height for 2 boxes*/
+        align-items: stretch; 
         /* Adjust the height as needed. This locates the box properly */
-        height: 100vh; 
+        /* height: 100vh;  */
     }
 
     /* white box in the left of the page */
     .box-left {
             width: 50%;
-            height: 500px;
             border-radius: 1.25rem;
             background: #FFF;
             box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+            padding: 15px;
     }
 
     .box-right {
         width: 40%;
-        height: 500px;
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         /* add the background image  */
         background-image: url(../assets/images/images-in-questions/school.jpg);
         background-size: cover; /* Adjust how the background image is displayed */
         background-position: center; /* Center the background image */
-
     }
 
     /* content inside the left box */
