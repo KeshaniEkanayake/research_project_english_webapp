@@ -1,4 +1,4 @@
-<!-- this card component contains an image and a text related to a reaading comprehension question 1 -->
+<!-- this card component contains an image and a text related to a reading comprehension question 1 -->
 <template>
     <n-card>
       <template #cover>
@@ -6,13 +6,6 @@
         </template>
           <h2>{{cardTitle}}</h2>
             <p class="para-style"> {{ readingText }}</p>
-            <!-- Come and join our lunchtime yoga class with experienced yoga teacher Divya Bridge!
-            When? Every Tuesday at 1.30 p.m.
-            Where? Meeting Room 7
-            How much? £10 for four 30-minute classes.
-            What to bring? Comfortable clothes. Divya will provide the yoga mats.
-            How to join? Write to Sam at Sam.Holden@example.com
-            We can only take a maximum of 20 in the room, so book now! -->
     </n-card>
   </template>
   
@@ -24,7 +17,7 @@
 
       cardTitle:{
         type: String,
-
+        required: true,
       },
 
       readingText:{
@@ -52,6 +45,10 @@
 
   .image-style{
     border-radius: 1.25rem;
+    display: block; /* Ensures the image is centered horizontally */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 60%; /* Adjust the image size as needed */
+    
   }
 
   .para-style{

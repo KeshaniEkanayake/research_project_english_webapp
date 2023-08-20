@@ -10,7 +10,7 @@
                 <n-space>
                         <n-radio
                             :checked="checkedValue === 'a few'"
-                            value="afew"
+                            value="a few"
                             name="answers"
                             @change="handleChange"
                             size="large"
