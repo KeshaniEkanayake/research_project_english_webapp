@@ -50,7 +50,8 @@
 
 <script>
 import {  ref } from "vue";
-import ButtonCheck from "../components/ButtonCheck.vue"
+import ButtonCheck from "../../../../components/ButtonCheck.vue"
+
 
 export default({
 // related to the radio buttons in the page
@@ -76,7 +77,7 @@ export default({
 
 
 <style scoped> 
-@import url(../assets/CSS/cssFile.css);
+@import url(../../../../assets/CSS/cssFile.css);
 
     .page-style{
         display: flex;
