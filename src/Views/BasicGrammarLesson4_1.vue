@@ -2,8 +2,8 @@
 <template>
   <div class="mainBackground1">
     <div class="page-style">
-        <ButtonSelection @click="navToLesson1" lessonName="Task 1" /> <br>
-        <ButtonSelection @click="navToLesson2" lessonName="Task 2" /> <br>
+        <ButtonSelection :link="lesson1Path" lessonName="Task 1" /> <br>
+        <ButtonSelection :link="lesson2Path" lessonName="Task 2" /> <br>
     </div>
    
   </div>
@@ -20,17 +20,25 @@ export default {
         ButtonSelection,
     },
 
-    methods: {
-      // add a navigation to the corresponding grammar lesson when each button is clicked  
-        navToLesson1(){
-          console.log("navigate to task 1...");
-        },
-
-        navToLesson2(){
-          console.log("navigate to task 2...");
-        },
+    computed: {
+    lesson1Path() {
+      return '/Basic/Grammar/lesson4_2'; // Modify with your path that you given in the route.vue file under "path:" variable
     },
-}
+    lesson2Path() {
+      return '/Basic/Grammar/lesson4_3'; // Modify with your path that you given in the route.vue file  "path:" variable
+    },
+  },
+    // methods: {
+    //   // add a navigation to the corresponding grammar lesson when each button is clicked  
+    //     navToLesson1(){
+    //       console.log("navigate to task 1...");
+    //     },
+
+    //     navToLesson2(){
+    //       console.log("navigate to task 2...");
+    //     },
+    // },
+};
 </script>
 
 

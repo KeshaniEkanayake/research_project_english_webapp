@@ -1,16 +1,17 @@
 <!-- reusable component for select lessons in grammar module -->
 <!-- this is a long button -->
 <template>
+ 
     <n-space>
-      <!-- @click="handleClick" is used to add link to the button -->
-      <!-- v-on="$listner" is used to add a listner to button(to add a link in a dynamic way) -->
-      <!-- v-bind="$attrs" is used to make button component listen to events provided dynamically -->
-      <n-button type="info" size="large" icon-placement="right" class="selectLessonButton">
-        <template #icon>
-          <n-icon><log-in-icon/></n-icon>
-        </template>
+       <!-- add a link dynamically -->
+       <router-link :to="link" class="selectLessonButton">
+          <n-button type="info" size="large" icon-placement="right" class="selectLessonButton">
+            <template #icon>
+              <n-icon><log-in-icon/></n-icon>
+            </template>
             {{lessonName}}
-      </n-button>
+          </n-button>
+      </router-link>
     </n-space>
 </template>
   
@@ -37,6 +38,12 @@
           type: String,
           // default value to be displayed 
           default: ()=>"lesson name",
+        },
+
+        // link to the button
+        link: {
+          type: String, // Route path for navigation
+          required: true,
         },
       },
 
