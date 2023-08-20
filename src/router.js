@@ -6,16 +6,17 @@ import Home from './Views/Home.vue';
 import About from './Views/About.vue';
 import SelectProfLevel from './Views/SelectProfLevel.vue'
 import ModuleSelection from './Views/ModuleSelection.vue'
-import SelectBasicGrammarLessons from './Views/SelectBasicGrammarLessons.vue'
 
-import BasicGrammarLesson1_1 from './Views/Basic/Grammar/Lesson1/BasicGrammarLesson1_1.vue'
-import BasicGrammarLesson2_1 from './Views/BasicGrammarLesson2_1.vue'
-import BasicGrammarLesson3_1 from './Views/BasicGrammarLesson3_1.vue'
-import BasicGrammarLesson4_1 from './Views/BasicGrammarLesson4_1.vue'
-import BasicGrammarLesson4_2 from './Views/BasicGrammarLesson4_2.vue'
-import BasicGrammarLesson4_3 from './Views/BasicGrammarLesson4_3.vue'
+import SelectGrammarLessons from './Views/Basic/Grammar/SelectGrammarLessons.vue'
 
-import BasicReading2 from './Views/BasicReading2.vue'
+import Lesson1_1 from './Views/Basic/Grammar/Lesson1/Lesson1_1.vue'
+import Lesson2_1 from './Views/Basic/Grammar/Lesson2/Lesson2_1.vue'
+import Lesson3_1 from './Views/Basic/Grammar/Lesson3/Lesson3_1.vue'
+import Lesson4_1 from './Views/Basic/Grammar/Lesson4/Lesson4_1.vue'
+import Lesson4_2 from './Views/Basic/Grammar/Lesson4/Lesson4_2.vue'
+import Lesson4_3 from './Views/Basic/Grammar/Lesson4/Lesson4_3.vue'
+
+import ReadingText1 from './Views/Basic/Reading/ReadingText1.vue'
 
 
 
@@ -27,16 +28,17 @@ const routes = [
   { path: '/About', component: About },
   { path: '/SelectProfLevel', component: SelectProfLevel },
   { path: '/ModuleSelection', component: ModuleSelection },
-  { path: '/SelectBasicGrammarLessons', component: SelectBasicGrammarLessons },
 
-  { path: '/Basic/Grammar/Lesson1_1', component: BasicGrammarLesson1_1 },
-  { path: '/Basic/Grammar/Lesson2', component: BasicGrammarLesson2_1 },
-  { path: '/Basic/Grammar/lesson3', component: BasicGrammarLesson3_1 },
-  { path: '/Basic/Grammar/lesson4_1', component: BasicGrammarLesson4_1 },
-  { path: '/Basic/Grammar/lesson4_2', component: BasicGrammarLesson4_2 },
-  { path: '/Basic/Grammar/lesson4_3', component: BasicGrammarLesson4_3 },
+  { path: '/Basic/SelectGrammarLessons', component: SelectGrammarLessons },
 
-  { path: '/Basic/Reading/lesson1', component: BasicReading2 },
+  { path: '/Basic/Grammar/Lesson1_1', component: Lesson1_1 },
+  { path: '/Basic/Grammar/Lesson2_1', component: Lesson2_1 },
+  { path: '/Basic/Grammar/Lesson3_1', component: Lesson3_1 },
+  { path: '/Basic/Grammar/lesson4_1', component: Lesson4_1 },
+  { path: '/Basic/Grammar/lesson4_2', component: Lesson4_2 },
+  { path: '/Basic/Grammar/lesson4_3', component: Lesson4_3 },
+
+  { path: '/Basic/Reading/ReadingText1', component: ReadingText1 },
 
 
 

@@ -63,9 +63,9 @@
 
 
 <script>
-import ButtonAnswer from "../components/ButtonAnswer.vue"
-import InputAnswer from "../components/InputAnswer.vue"
-import ButtonCheck from "../components/ButtonCheck.vue"
+import ButtonAnswer from "../../../../components/ButtonAnswer.vue"
+import InputAnswer from "../../../../components/InputAnswer.vue"
+import ButtonCheck from "../../../../components/ButtonCheck.vue"
 
 export default {
     components:{
@@ -98,7 +98,7 @@ export default {
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         /* add the background image  */
-        background-image: url(../assets/images/images-in-questions/sigiriya.jpg);
+        background-image: url(../../../../assets/images/images-in-questions/sigiriya.jpg);
         background-size: cover; /* Adjust how the background image is displayed */
         background-position: center; /* Center the background image */
 

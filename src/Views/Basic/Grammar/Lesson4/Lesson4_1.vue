@@ -13,7 +13,7 @@
 
 
 <script>
-import ButtonSelection from '../components/ButtonSelect.vue'
+import ButtonSelection from '../../../../components/ButtonSelect.vue'
 
 export default {
     components:{
@@ -45,7 +45,7 @@ export default {
 
 
 <style scoped>
-@import url(../assets/CSS/cssFile.css);
+@import url(../../../../assets/CSS/cssFile.css);
 
 .page-style{
         /* topic and the large box will be displayed in 1 column */

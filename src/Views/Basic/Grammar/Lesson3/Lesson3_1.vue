@@ -40,7 +40,7 @@
 
 <script>
 import {  ref } from "vue";
-import ButtonCheck from "../components/ButtonCheck.vue"
+import ButtonCheck from "../../../../components/ButtonCheck.vue"
 
 
 export default {
@@ -66,7 +66,7 @@ export default {
 
 
 <style scoped>
-@import url(../assets/CSS/cssFile.css);
+@import url(../../../../assets/CSS/cssFile.css);
 
 .page-style{
         display: flex;
