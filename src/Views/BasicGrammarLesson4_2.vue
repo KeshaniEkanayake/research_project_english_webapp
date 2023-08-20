@@ -92,7 +92,7 @@ components:{
         gap: 20px;
         /* justify-content: center; */
         /* For vertical alignment */
-        /* align-items: center;  */
+        align-items: stretch; /* Align items with the same height */ 
         /* Adjust the height as needed. This locates the box properly */
         /* height: 90vh;  */
         padding: 10px;
@@ -101,7 +101,7 @@ components:{
 
 .box-left {
         width: 30%;
-        height: 550px;
+        /* height: 550px; */
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         /* add the background image  */
