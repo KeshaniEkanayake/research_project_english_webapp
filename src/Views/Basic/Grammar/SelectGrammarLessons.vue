@@ -10,7 +10,7 @@
         <ButtonSelection :link="lesson2Path" lessonName ="Prepositions of place - 'in', 'on', 'at' "/> <br>
         <ButtonSelection :link="lesson3Path" lessonName ="Quantifiers: 'few', 'a few', 'little' and 'a bit of' "/> <br>
         <ButtonSelection :link="lesson4Path" lessonName ="Simple Present Tense "/> <br>
-        <!-- <ButtonSelection :link="lesson5Path" lessonName ="Simple Prast Tense and Past Continuous Tense"/> -->
+        <ButtonSelection :link="lesson5Path" lessonName ="Simple Prast Tense and Past Continuous Tense"/>
     </div>
   </div>
 </template>
@@ -35,6 +35,9 @@ export default {
     },
     lesson4Path() {
       return '/Basic/Grammar/Lesson4_1'; // Modify with your path that you given in the route.vue file  "path:" variable
+    },
+    lesson5Path() {
+      return '/Basic/Grammar/Lesson5_1'; // Modify with your path that you given in the route.vue file  "path:" variable
     },
   },
 }
