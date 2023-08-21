@@ -4,7 +4,7 @@
         <!-- QUESTION CONTENT  -->
         <div class="box-property">
             <h2>Fill in the blanks</h2>
-            <p>She --- in a Hospital (WORK)</p>
+            <p>She <InputAnswer1/> in a Hospital (WORK)</p>
 
             <!-- check button -->
             <br><br>
@@ -18,10 +18,12 @@
 
 <script>
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
+import InputAnswer1 from "../../../../components/InputAnswer1.vue"
+
 
 export default {
     components: {
-        ButtonCheck,
+        ButtonCheck, InputAnswer1
     }
 }
 </script>
