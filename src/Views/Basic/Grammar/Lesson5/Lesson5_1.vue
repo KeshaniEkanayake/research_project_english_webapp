@@ -1,14 +1,16 @@
 <!-- basic -> grammar-> lesson 5(simple present tense) -->
 <template>
-    <div class="page-style center-item">
-        <!-- QUESTION CONTENT  -->
-        <div class="box-property">
-            <h2>Fill in the blanks</h2>
-            <p>She <InputAnswer1/> in a Hospital (WORK)</p>
+    <div class="mainBackground1">
+        <div class="page-style center-item">
+            <!-- QUESTION CONTENT  -->
+            <div class="box-property">
+                <h2>Fill in the blanks</h2>
+                <p>She <InputAnswer1/> in a Hospital (WORK)</p>
 
-            <!-- check button -->
-            <br><br>
+                <!-- check button -->
+                <br><br>
                 <ButtonCheck/>
+            </div>
         </div>
     </div>
 </template>
@@ -51,6 +53,12 @@ export default {
         background: #FFF;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         padding: 10px;
+        font-size: large;
+    }
+
+    p{
+        color: #000000;
+
     }
 
 </style>
