@@ -4,10 +4,13 @@
         <div class="page-style">
             <div class="box-property">
                 <div class="inside-box">
-
-                    <!-- scorebar -->
-                    <ScoreBar :currentScore="currentScore" :totalScore="totalScore" />
-
+                    <table>
+                        <tr>
+                          <!-- scorebar -->
+                          <td> <ScoreBar :currentScore="currentScore" :totalScore="totalScore" /></td>
+                        </tr>
+                    </table>
+                    
 
                     <h2>Choose the suitable preposition</h2> <br>
                     <p>I am really proud__________ of you!</p>
