@@ -1,5 +1,7 @@
 <!-- this is a reusable card for all 3 module types->grammar, listening and reading -->
 <template>
+  <!-- add navigation path when the card is clicked -->
+  <router-link :to="link">
     <n-card size="medium" hoverable>
       <div class="card-content">
         <h3>{{ cardHeading }}</h3>
@@ -7,6 +9,7 @@
         <br>
       </div>
     </n-card>
+  </router-link>
 </template>
  
 
@@ -17,12 +20,18 @@
       cardHeading:{
         type: String,
       },
-    // used to add an image dynamically to the card
-    imageSrc: {
-            type: String,
-            required: true, // Make the prop required
-          },
 
+      // used to add an image dynamically to the card
+      imageSrc: {
+              type: String,
+              required: true, // Make the prop required
+      },
+
+      // add navigation path
+      link: {
+          type: String, // Route path for navigation
+          // required: true,
+        },
     },  
   });
  

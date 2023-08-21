@@ -6,15 +6,19 @@
                 <CardModuleSelection 
                     cardHeading="Listnening" 
                     :imageSrc="listeningImage"
+                    :link="ListningContentPath"
                 />
 
                 <CardModuleSelection 
                     cardHeading="Reading"
                     :imageSrc="readingImage"
+                    :link="ReadingContentPath"
                 />
 
-                <CardModuleSelection cardHeading="Grammar"
-                :imageSrc="grammarImage"                
+                <CardModuleSelection 
+                    cardHeading="Grammar"
+                    :imageSrc="grammarImage"  
+                    :link="GrammarContentPath"              
                 />
             </div>
                        
@@ -46,6 +50,18 @@ export default {
             grammarImage: grammarImage,
         };
     },
+
+    computed: {
+        ListningContentPath() {
+        return '/Basic/Listining/lesson1'; // Modify with your path that you given in the route.vue file under "path:" variable
+        },
+        ReadingContentPath() {
+        return '/Basic/Reading/ReadingText1'; // Modify with your path that you given in the route.vue file  "path:" variable
+        },
+        GrammarContentPath() {
+            return '/Basic/SelectGrammarLessons'; // Modify with your path that you given in the route.vue file under "path:" variable
+        },
+  },
 };
 </script>
     
