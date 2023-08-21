@@ -4,6 +4,11 @@
         <div class="page-style">
             <div class="box-property">
                 <div class="inside-box">
+
+                    <!-- scorebar -->
+                    <ScoreBar :currentScore="currentScore" :totalScore="totalScore" />
+
+
                     <h2>Choose the suitable preposition</h2> <br>
                     <p>I am really proud__________ of you!</p>
 
@@ -51,26 +56,36 @@
 <script>
 import {  ref } from "vue";
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
+import ScoreBar from "../../../../components/ScoreBar.vue"
 
 
 export default({
-// related to the radio buttons in the page
-  setup() {
-    const checkedValueRef = ref(null);
-    
-    return {
-      disabled: ref(true),
-      checkedValue: checkedValueRef,
-      handleChange(e) {
-        checkedValueRef.value = e.target.value;
-      }
-    };
-  },
+    components:{
+    ButtonCheck, ScoreBar,
+    },
 
 
-  components:{
-    ButtonCheck
-  }
+    // related to the radio buttons in the page
+    setup() {
+        const checkedValueRef = ref(null);
+        
+        return {
+        disabled: ref(true),
+        checkedValue: checkedValueRef,
+        handleChange(e) {
+            checkedValueRef.value = e.target.value;
+        }
+        };
+    },
+
+
+    //   related scorebar
+    data() {
+        return {
+        currentScore: 75, // Example current score
+        totalScore: 100, // Example total score
+        };
+    },
 });
 </script>
 
@@ -90,11 +105,12 @@ export default({
 
      /* white box in the middle of the page */
     .box-property {
-        height: 50%;
+        height: auto;
         width: 50%;
         border-radius: 1.25rem;
         background: #FFF;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+        padding: 1%;
     }
 
     .inside-box{
