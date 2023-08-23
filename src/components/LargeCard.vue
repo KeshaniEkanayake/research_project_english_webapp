@@ -1,7 +1,7 @@
 <!-- large card component with 3 proficiency level buttons  -->
 <template>
     <n-space>
-        <n-card size="huge">
+        <n-card size="huge" class="card-style">
             <!-- buttons to select different proficiency levels -->
             <ButtonBasicProfLevel/>
             <br>             
@@ -29,3 +29,10 @@
         },
     });
 </script>
+
+
+<style scoped>
+    .card-style{
+        border-radius: 1.25rem;
+    }
+</style>
