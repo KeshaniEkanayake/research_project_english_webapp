@@ -1,6 +1,8 @@
 <template>
   <div class="mainBackground1">
-    <div class="page-structure"> 
+    <BreadCrumbs/>
+
+    <div class="page-style2"> 
       <!-- left part with the image and the reading text -->
       <CardReadingText 
           :cardTitle="cardTitle"
@@ -11,7 +13,7 @@
 
 
         <!-- right part with quesitons -->
-        <div class="box-right">
+        <div class="box-left">
           <!-- tabs to select the task -->
           <TabsReading1/>
         </div>
@@ -26,12 +28,13 @@
 import CardReadingText from "../../../components/CardReadingText.vue"
 import TabsReading1 from "../../../components/TabsReading1.vue"
 import readingTextImage from "../../../assets/images/images-in-questions/reading1.jpg";
+import BreadCrumbs from "../../../components/BreadCrumbs.vue"
 
 
 
 export default {
     components:{
-        CardReadingText, TabsReading1,
+        CardReadingText, TabsReading1, BreadCrumbs,
     },
 
     data(){
@@ -58,24 +61,4 @@ export default {
 @import url(../../../assets/CSS/cssFile.css);
 
 
-  .page-structure{
-      display: flex;
-      /* keep a gap between 2 boxes */
-      gap: 20px;
-      justify-content: center;
-      /* For vertical alignment */
-      align-items: stretch; /* Align items with the same height */ 
-      padding: 10px;
-        
-  }
-
-
-  /* white box in the right of the page */
-  .box-right {
-            width: 50%;
-            border-radius: 1.25rem;
-            background: #FFF;
-            box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-            padding: 15px;
-  }
 </style>
