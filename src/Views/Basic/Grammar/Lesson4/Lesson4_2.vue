@@ -2,68 +2,56 @@
 <!-- a page wth 2 boxes -->
 
 <template>
-    <div class="page-structure">
-        <!-- left box with an image -->
-        <div class="box-left">
-         
-        </div>
+    <div class="background-color">
+        <BreadCrumbs/>
+        <div class="page-style2">
+            <!-- left box with an image -->
+            <div class="box-with-image">
+                
+            </div>
 
 
 
 
 
-        <!-- right part with the question content -->
-            <div class="right-content">
+                <!-- right part with the question content -->
+            <div class="box-left">
                 <h2>Put the corresponding number of the answer in the given space</h2>
 
                 <p class="para-style"> Last August, I (1) <InputAnswer/>(go) to Ella, a beautiful hill station in Sri Lanka, for a vacation. 
-                I (2) <InputAnswer/>(travel) there with my family. The journey (3) <InputAnswer/>(take) several hours by train.
-                While we (4) <InputAnswer/>(enjoy) the scenic views from the train, I (5) <InputAnswer/>(feel) a sense of excitement. When we (6) <InputAnswer/>(arrive) 
-                in Ella, the weather (7) <InputAnswer/>(be) perfect – the sun (8) <InputAnswer/>(shine) and a cool breeze (9) <InputAnswer/>(blow). We (10) <InputAnswer/>(stay) in a cozy 
-                cottage with stunning views of the surrounding tea plantations. During our stay, we (11) <InputAnswer/>(explore) the area by hiking to 
-                Little Adam's Peak and (12) <InputAnswer/>(visit) the Nine Arch Bridge. Each moment (13) <InputAnswer/>(seem) like a new adventure. We (14) <InputAnswer/>(capture) 
-                many photos to remember the trip. Overall, my vacation in Ella (15) <InputAnswer/>(be) an unforgettable experience that I will cherish forever.</p>
+                    I (2) <InputAnswer/>(travel) there with my family. The journey took several hours by train.
+                    While we (3) <InputAnswer/>(enjoy) the scenic views from the train, I (4) <InputAnswer/>(feel) a sense of excitement. When we (5) <InputAnswer/>(arrive) 
+                    in Ella, the weather was perfect – the sun was shininig and a cool breeze (6) <InputAnswer/>(blow). We (7) <InputAnswer/>(stay) in a cozy 
+                    cottage with stunning views of the surrounding tea plantations. During our stay, we (8) <InputAnswer/>(explore) the area by hiking to 
+                    Little Adam's Peak and (9) <InputAnswer/>(visit) the Nine Arch Bridge. Each moment seemed like a new adventure. We (10) <InputAnswer/>(capture) 
+                    many photos to remember the trip. Overall, my vacation in Ella was an unforgettable experience that I will cherish forever.</p>
 
                 <br>
-                    <!-- answers -->
-             <table>
-                    <tr>
-                        <td><ButtonAnswer answer="1 took"/></td>
-                        <td><ButtonAnswer answer="5 arrived"/></td>
-                        <td><ButtonAnswer answer="9 visited"/></td>
-                        <td><ButtonAnswer answer="13 was blowing"/></td>
-                        
-                    </tr>
 
-                    <tr>
-                        <td><ButtonAnswer answer="2 stayed"/></td>
-                        <td><ButtonAnswer answer="6 explored"/></td>
-                        <td><ButtonAnswer answer="10 went"/></td>
-                        <td><ButtonAnswer answer="14 was"/></td>
-                       
-                    </tr>
-
-                    <tr>
-                        <td><ButtonAnswer answer="3  were enjoying"/></td>
-                        <td><ButtonAnswer answer="7 was"/></td>
-                        <td><ButtonAnswer answer="11 seemed"/></td>
-                        <td><ButtonAnswer answer="15 traveled "/></td>
-                    </tr>
-
-                    <tr>
-                        <td><ButtonAnswer answer="4 felt"/></td>
-                        <td><ButtonAnswer answer="8  captured"/></td>
-                        <td><ButtonAnswer answer="12  was shining"/></td>
-
-                    </tr>
-
-                </table>
-                   <br> 
                 <!-- check answer button -->
                 <ButtonCheck/>
 
+                        
+                
+                
+
             </div>
-        <!-- </div> -->
+
+            <!-- answers -->
+            <div class="answers-box">
+                <ButtonAnswer answer="5 arrived"/> <br>
+                <ButtonAnswer answer="9 visited"/><br>
+                <ButtonAnswer answer="1 was blowing"/> <br>
+                <ButtonAnswer answer="2 stayed"/><br>
+                <ButtonAnswer answer="6 explored"/><br>
+                <ButtonAnswer answer="10 went"/><br>
+                <ButtonAnswer answer="3  were enjoying"/><br>
+                <ButtonAnswer answer="7 traveled "/><br>
+                <ButtonAnswer answer="4 felt"/><br>
+                <ButtonAnswer answer="8  captured"/><br>
+            </div>
+            
+        </div>
     </div>
 </template>
 
@@ -74,10 +62,12 @@
 import ButtonAnswer from "../../../../components/ButtonAnswer.vue"
 import InputAnswer from "../../../../components/InputAnswer.vue"
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
+import BreadCrumbs from "../../../../components/BreadCrumbs.vue"
+
 
 export default {
 components:{
-    ButtonAnswer, InputAnswer,ButtonCheck,
+    ButtonAnswer, InputAnswer,ButtonCheck, BreadCrumbs,
 }
 }
 </script>
@@ -85,21 +75,10 @@ components:{
 
 
 <style scoped>
-/* arrange 2 boxes in the page in left and right */
-.page-structure{
-        display: flex;
-        /* keep a gap between 2 boxes */
-        gap: 20px;
-        /* justify-content: center; */
-        /* For vertical alignment */
-        align-items: stretch; /* Align items with the same height */ 
-        /* Adjust the height as needed. This locates the box properly */
-        /* height: 90vh;  */
-        padding: 10px;
-    }
-
-
-.box-left {
+.background-color{
+    background-color: black;
+}
+.box-with-image {
         width: 30%;
         /* height: 550px; */
         border-radius: 1.25rem;
@@ -111,15 +90,19 @@ components:{
 
     }
    
-
-    .right-content{
-        width: 60%;
-    }
    .para-style{
     color: black;
     font-size: medium;
     
    }
+
+.answers-box{
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    padding: 1%;
+}
+
 
 
 </style>

@@ -1,6 +1,8 @@
 <!-- page to select the task in grammar lesson 4 -->
 <template>
   <div class="mainBackground1">
+    <BreadCrumbs/>
+
     <div class="page-style">
         <ButtonSelection :link="lesson1Path" lessonName="Task 1" /> <br>
         <ButtonSelection :link="lesson2Path" lessonName="Task 2" /> <br>
@@ -14,10 +16,11 @@
 
 <script>
 import ButtonSelection from '../../../../components/ButtonSelect.vue'
+import BreadCrumbs from "../../../../components/BreadCrumbs.vue"
 
 export default {
     components:{
-        ButtonSelection,
+        ButtonSelection, BreadCrumbs,
     },
 
     computed: {

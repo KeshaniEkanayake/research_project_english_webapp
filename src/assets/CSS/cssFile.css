@@ -46,7 +46,7 @@
     /* For vertical alignment */
     align-items: center; 
     /* Adjust the height as needed. This locates the box properly */
-    height: 90vh; 
+    height: 100vh; 
  } 
 
 
@@ -79,13 +79,13 @@
     /* For vertical alignment -set same height for 2 boxes*/
     align-items: stretch; 
     /* Adjust the height as needed. This locates the box properly */
-    height: 90vh; 
+    height: 95vh; 
     /* margin-top: 10%; */
             
 }
 
 
-/* white box in the left of the page */
+/* white box in left/ right of the page*/
 .box-left {
     width: 50%;
     border-radius: 1.25rem;
