@@ -1,4 +1,4 @@
-<!-- /Basic/Grammar/Lesson1_1   use this path to get the page displayed in th browser.  question 1 -->
+<!-- /Basic/Grammar/Lesson 1    question 2 -->
 <template>
     <div class="mainBackground1">
         <BreadCrumbs/>
@@ -14,9 +14,29 @@
                     
 
                     <h2>Choose the suitable preposition</h2> <br>
-                    <p>I am really proud __________ you!</p>
+                    <p>She's responsible ______ health and safety.</p>
 
                     <n-space>
+                        <n-radio
+                            :checked="checkedValue === 'for'"
+                            value="for"
+                            name="answers"
+                            @change="handleChange"
+                            size="large"
+                        >
+                        for
+                        </n-radio>
+
+                        <n-radio
+                            :checked="checkedValue === 'in'"
+                            value="in"
+                            name="answers"
+                            @change="handleChange"
+                            size="large"
+                        >
+                        in
+                        </n-radio>
+
                         <n-radio
                             :checked="checkedValue === 'of'"
                             value="of"
@@ -25,26 +45,6 @@
                             size="large"
                         >
                         of
-                        </n-radio>
-
-                        <n-radio
-                            :checked="checkedValue === 'to'"
-                            value="to"
-                            name="answers"
-                            @change="handleChange"
-                            size="large"
-                        >
-                            to
-                        </n-radio>
-
-                        <n-radio
-                            :checked="checkedValue === 'with'"
-                            value="with"
-                            name="answers"
-                            @change="handleChange"
-                            size="large"
-                        >
-                            with
                         </n-radio>
                     </n-space>
                     <br>
@@ -99,5 +99,5 @@ export default({
 
 <style scoped> 
 @import url(../../../../assets/CSS/cssFile.css);
-
+ 
 </style>

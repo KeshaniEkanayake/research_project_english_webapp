@@ -10,6 +10,11 @@ import ModuleSelection from './Views/ModuleSelection.vue'
 import SelectGrammarLessons from './Views/Basic/Grammar/SelectGrammarLessons.vue'
 
 import Lesson1_1 from './Views/Basic/Grammar/Lesson1/Lesson1_1.vue'
+import Lesson1_2 from './Views/Basic/Grammar/Lesson1/Lesson1_2.vue'
+import Lesson1_3 from './Views/Basic/Grammar/Lesson1/Lesson1_3.vue'
+import Lesson1_4 from './Views/Basic/Grammar/Lesson1/Lesson1_4.vue'
+import Lesson1_5 from './Views/Basic/Grammar/Lesson1/Lesson1_5.vue'
+
 import Lesson2_1 from './Views/Basic/Grammar/Lesson2/Lesson2_1.vue'
 import Lesson3_1 from './Views/Basic/Grammar/Lesson3/Lesson3_1.vue'
 import Lesson4_1 from './Views/Basic/Grammar/Lesson4/Lesson4_1.vue'
@@ -35,6 +40,11 @@ const routes = [
   { path: '/Basic/SelectGrammarLessons', component: SelectGrammarLessons },
 
   { path: '/Basic/Grammar/Lesson1_1', component: Lesson1_1 },
+  { path: '/Basic/Grammar/Lesson1_2', component: Lesson1_2 },
+  { path: '/Basic/Grammar/Lesson1_3', component: Lesson1_3 },
+  { path: '/Basic/Grammar/Lesson1_4', component: Lesson1_4 },
+  { path: '/Basic/Grammar/Lesson1_5', component: Lesson1_5 },
+
   { path: '/Basic/Grammar/Lesson2_1', component: Lesson2_1 },
   { path: '/Basic/Grammar/Lesson3_1', component: Lesson3_1 },
   { path: '/Basic/Grammar/lesson4_1', component: Lesson4_1 },
