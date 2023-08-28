@@ -2,7 +2,7 @@
 <template>
   <!-- add navigation path when the card is clicked -->
   <router-link :to="link">
-    <n-card size="medium" hoverable>
+    <n-card size="medium" hoverable class="card-style">
       <div class="card-content">
         <h3>{{ cardHeading }}</h3>
         <img :src="imageSrc" width="200" height="200"/>
@@ -50,5 +50,7 @@
     padding: 10px;
   }
 
-
+  .card-style{
+        border-radius: 1.25rem;
+    }
 </style>
