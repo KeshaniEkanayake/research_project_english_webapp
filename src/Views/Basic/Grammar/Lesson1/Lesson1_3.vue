@@ -2,7 +2,7 @@
 <template>
     <div class="mainBackground1">
         <BreadCrumbs/>
-        <div class="lesson1-page-style">
+        <div class="page-style1">
             <div class="middle-box-property">
                 <div class="inside-box">
                     <table>

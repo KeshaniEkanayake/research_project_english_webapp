@@ -40,7 +40,7 @@
 
 
 /* Basic/Grammar/Lesson 1  pages' stylings */
-.lesson1-page-style{
+.page-style1{
     display: flex;
     justify-content: center;
     /* For vertical alignment */
