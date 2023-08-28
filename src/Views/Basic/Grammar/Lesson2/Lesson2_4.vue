@@ -1,4 +1,4 @@
-<!-- Basic/Grammar/Lesson2  question 1-->
+<!-- Basic/Grammar/Lesson2  question 3-->
 <template>
     <div class="mainBackground1">
         <BreadCrumbs/>
@@ -8,7 +8,7 @@
                     <!-- inside-box class is taken from cssFile.css -->
                     <div class="inside-box">
                         <h2>Choose the correct preposition</h2>
-                        <p>On Friday mornings, I'm usually _________ school.</p>
+                        <p>  They're going to meet _____ the café.</p>
                         <br>
 
                     <!-- radio buttons -->
@@ -20,7 +20,7 @@
                                 @change="handleChange"
                                 size="large"
                             >
-                            at
+                                at
                             </n-radio>
 
                             <n-radio
@@ -30,8 +30,10 @@
                                 @change="handleChange"
                                 size="large"
                             >
-                                in
+                            in
                             </n-radio>
+
+                           
                         </n-space>
                         <br>
                         <!-- check button -->
@@ -88,11 +90,8 @@ export default {
         border-radius: 1.25rem;
         box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
         /* add the background image  */
-        background-image: url(../../../../assets/images/images-in-questions/school.jpg);
+        background-image: url(../../../../assets/images/images-in-questions/cafe2.jpg);
         background-size: cover; /* Adjust how the background image is displayed */
         background-position: center; /* Center the background image */
     }
-
- 
-
 </style>
