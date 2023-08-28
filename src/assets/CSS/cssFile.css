@@ -7,6 +7,7 @@
     width: 300px;
 }
 
+
 /* this background is added to the common pages in the app */
 .mainBackground1{
     background-image: url(../../assets/images/main-background.jpg);
@@ -31,14 +32,13 @@
 
 }
 
+
 /* use to center the check button */
 .center-item{
     text-align: center;
    }
 
 
-   
-/* 01 */
 /* Basic/Grammar/Lesson 1  pages' stylings */
 .lesson1-page-style{
     display: flex;
@@ -48,6 +48,7 @@
     /* Adjust the height as needed. This locates the box properly */
     height: 90vh; 
  } 
+
 
   /* white box in the middle of the page */
   .middle-box-property {
@@ -59,7 +60,8 @@
     padding: 1%;
 }
 
-.inside-middle-box{
+
+.inside-box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,3 +69,27 @@
 }
 
 
+/* this page structure is used for a page with 2 containers (Grammar/Lesson2 pages)*/
+/* arrange 2 boxes in the page in left and right */
+.page-style2{
+    display: flex;
+    /* keep a gap between 2 boxes */
+    gap: 20px;
+    justify-content: center;
+    /* For vertical alignment -set same height for 2 boxes*/
+    align-items: stretch; 
+    /* Adjust the height as needed. This locates the box properly */
+    height: 90vh; 
+    /* margin-top: 10%; */
+            
+}
+
+
+/* white box in the left of the page */
+.box-left {
+    width: 50%;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+}

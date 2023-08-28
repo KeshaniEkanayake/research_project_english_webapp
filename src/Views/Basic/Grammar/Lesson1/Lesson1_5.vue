@@ -4,7 +4,7 @@
         <BreadCrumbs/>
         <div class="lesson1-page-style">
             <div class="middle-box-property">
-                <div class="inside-middle-box">
+                <div class="inside-box">
                     <table>
                         <tr>
                           <!-- scorebar -->
