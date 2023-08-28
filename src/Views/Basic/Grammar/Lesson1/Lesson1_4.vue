@@ -1,4 +1,4 @@
-<!-- /Basic/Grammar/Lesson1_1   use this path to get the page displayed in th browser.  question 1 -->
+<!-- /Basic/Grammar/Lesson 1    question 4 -->
 <template>
     <div class="mainBackground1">
         <BreadCrumbs/>
@@ -14,37 +14,37 @@
                     
 
                     <h2>Choose the suitable preposition</h2> <br>
-                    <p>I am really proud __________ you!</p>
+                    <p>They're interested ___ our project.</p>
 
                     <n-space>
                         <n-radio
-                            :checked="checkedValue === 'of'"
-                            value="of"
+                            :checked="checkedValue === 'about'"
+                            value="about"
                             name="answers"
                             @change="handleChange"
                             size="large"
                         >
-                        of
+                        about
                         </n-radio>
 
                         <n-radio
-                            :checked="checkedValue === 'to'"
-                            value="to"
+                            :checked="checkedValue === 'in'"
+                            value="in"
                             name="answers"
                             @change="handleChange"
                             size="large"
                         >
-                            to
+                        in
                         </n-radio>
 
                         <n-radio
-                            :checked="checkedValue === 'with'"
-                            value="with"
+                            :checked="checkedValue === 'on'"
+                            value="on"
                             name="answers"
                             @change="handleChange"
                             size="large"
                         >
-                            with
+                        on
                         </n-radio>
                     </n-space>
                     <br>
