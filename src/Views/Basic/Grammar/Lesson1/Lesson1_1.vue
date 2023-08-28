@@ -1,6 +1,7 @@
 <!-- /Basic/Grammar/AdvPrepo   use this path to get the page displayed in th browser -->
 <template>
     <div class="mainBackground1">
+        <BreadCrumbs/>
         <div class="page-style">
             <div class="box-property">
                 <div class="inside-box">
@@ -60,11 +61,13 @@
 import {  ref } from "vue";
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
 import ScoreBar from "../../../../components/ScoreBar.vue"
+import BreadCrumbs from "../../../../components/BreadCrumbs.vue"
+
 
 
 export default({
     components:{
-    ButtonCheck, ScoreBar,
+    ButtonCheck, ScoreBar, BreadCrumbs,
     },
 
 
