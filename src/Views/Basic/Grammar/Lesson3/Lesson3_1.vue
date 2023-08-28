@@ -1,8 +1,13 @@
+<!-- Basci/Grammar/Lesson3  question 1 -->
 <template>
   <div class="mainBackground1">
-    <div class="page-style">
-        <div class="box-property">
+    <BreadCrumbs/>
+
+    <div class="page-style1">
+        <div class="middle-box-property">
             <div class="inside-box"> 
+              <ScoreBar :currentScore="currentScore" :totalScore="totalScore"/>
+
                 <p>I have__________ questions!</p>
 
 
@@ -41,6 +46,8 @@
 <script>
 import {  ref } from "vue";
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
+import ScoreBar from "../../../../components/ScoreBar.vue"
+import BreadCrumbs from "../../../../components/BreadCrumbs.vue"
 
 
 export default {
@@ -58,8 +65,16 @@ export default {
   },
 
   components:{
-    ButtonCheck
-  }
+    ButtonCheck, BreadCrumbs, ScoreBar
+  },
+
+   //   related scorebar
+   data() {
+        return {
+        currentScore: 75, // Example current score
+        totalScore: 100, // Example total score
+        };
+    },
 }
 </script>
 
@@ -68,28 +83,6 @@ export default {
 <style scoped>
 @import url(../../../../assets/CSS/cssFile.css);
 
-.page-style{
-        display: flex;
-        justify-content: center;
-        /* For vertical alignment */
-        align-items: center; 
-        /* Adjust the height as needed. This locates the box properly */
-        height: 100vh; 
-     } 
 
- /* white box in the middle of the page */
- .box-property {
-        height: 50%;
-        width: 50%;
-        border-radius: 1.25rem;
-        background: #FFF;
-        box-shadow: 0px 4px 4px 5px rgba(0, 0, 0, 0.25);
-    }
-
-    .inside-box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: large;
-    }
+ 
 </style>
