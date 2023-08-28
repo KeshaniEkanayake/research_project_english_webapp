@@ -5,7 +5,6 @@
             <!-- QUESTION CONTENT  -->
             <div class="middle-box-property">
                 <div class="inside-box">
-
                     <table>
                         <tr>
                           <!-- scorebar -->
@@ -14,8 +13,8 @@
                     </table>
 
                     <h2>Fill in the blanks</h2>
-                    <p>She <InputAnswer1/> in a Hospital (WORK)</p>
-
+                    <p><InputAnswer1/> You drink  tea? (DRINK)</p> 
+                     
                     <!-- check button -->
                     <br><br>
                     <ButtonCheck/>

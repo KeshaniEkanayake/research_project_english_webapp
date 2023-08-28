@@ -33,6 +33,10 @@ import Lesson4_3 from './Views/Basic/Grammar/Lesson4/Lesson4_3.vue'
 
 import Lesson5_1 from './Views/Basic/Grammar/Lesson5/Lesson5_1.vue'
 import Lesson5_2 from './Views/Basic/Grammar/Lesson5/Lesson5_2.vue'
+import Lesson5_3 from './Views/Basic/Grammar/Lesson5/Lesson5_3.vue'
+import Lesson5_4 from './Views/Basic/Grammar/Lesson5/Lesson5_4.vue'
+import Lesson5_5 from './Views/Basic/Grammar/Lesson5/Lesson5_5.vue'
+
 
 
 import ReadingText1 from './Views/Basic/Reading/ReadingText1.vue'
@@ -74,6 +78,9 @@ const routes = [
 
   { path: '/Basic/Grammar/lesson5_1', component: Lesson5_1 },
   { path: '/Basic/Grammar/lesson5_2', component: Lesson5_2 },
+  { path: '/Basic/Grammar/lesson5_3', component: Lesson5_3 },
+  { path: '/Basic/Grammar/lesson5_4', component: Lesson5_4 },
+  { path: '/Basic/Grammar/lesson5_5', component: Lesson5_5 },
 
 
   { path: '/Basic/Reading/ReadingText1', component: ReadingText1 },
