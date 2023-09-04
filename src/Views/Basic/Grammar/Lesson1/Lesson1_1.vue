@@ -1,6 +1,10 @@
 <!-- /Basic/Grammar/Lesson1_1   use this path to get the page displayed in th browser.  question 1 -->
 <template>
     <div class="mainBackground1">
+        <NavigationBar1/>
+         <!-- ralted to the links in top navigation bar -->
+         <router-view />
+
         <BreadCrumbs/>
         <div class="page-style1">
             <div class="middle-box-property">
@@ -52,6 +56,8 @@
                 </div>
             </div>
         </div>
+
+       
     </div>
 </template>
 
@@ -62,12 +68,12 @@ import {  ref } from "vue";
 import ButtonCheck from "../../../../components/ButtonCheck.vue"
 import ScoreBar from "../../../../components/ScoreBar.vue"
 import BreadCrumbs from "../../../../components/BreadCrumbs.vue"
-
+import NavigationBar1 from "../../../../components/NavigationBar1.vue"
 
 
 export default({
     components:{
-    ButtonCheck, ScoreBar, BreadCrumbs,
+    ButtonCheck, ScoreBar, BreadCrumbs, NavigationBar1,
     },
 
 
